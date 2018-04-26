@@ -1,0 +1,19 @@
+<p>
+  templatedriven works!
+</p>
+
+<form #userdata = "ngForm" class="userform" (ngSubmit)="onSubmit(userdata.value)">
+
+    <input type="text" name="fname" placeholder="First Name" ngModel>
+    <input type="text" name="lname" placeholder="Last Name" ngModel>
+    <br>
+    <select name="hobby" ngModel >
+      <option value="Driving" selected>Driving</option>
+      <option value="Cycling">Cycling</option>
+      <option value="Trekking">Trekking</option>
+      <option value="Sleeping">Sleeping</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit" >
+
+</form>

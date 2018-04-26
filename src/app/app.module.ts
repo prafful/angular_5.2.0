@@ -11,6 +11,11 @@ import { FatherComponent } from './day2/family/father/father.component';
 import { MotherComponent } from './day2/family/mother/mother.component';
 import { ChildComponent } from './day2/family/child/child.component';
 import { TodoComponent } from './day2/todo/todo.component';
+import { PipesComponent } from './day3/pipes/pipes.component';
+import { SortNamePipe } from './day3/custom-pipe/sort-name.pipe';
+import { SortNumberPipe } from './day3/custom-pipe/sort-number.pipe';
+import { TemplatedrivenComponent } from './day3/forms/templatedriven/templatedriven.component';
+import { ModeldrivenComponent } from './day3/forms/modeldriven/modeldriven.component';
 
 
 @NgModule({
@@ -20,7 +25,12 @@ import { TodoComponent } from './day2/todo/todo.component';
     FatherComponent,
     MotherComponent,
     ChildComponent,
-    TodoComponent
+    TodoComponent,
+    PipesComponent,
+    SortNamePipe,
+    SortNumberPipe,
+    TemplatedrivenComponent,
+    ModeldrivenComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +51,18 @@ import { TodoComponent } from './day2/todo/todo.component';
       {
         path:'todo',
         component:TodoComponent
+      },
+      {
+        path:'pipe',
+        component:PipesComponent
+      },
+      {
+        path:'templateform',
+        component:TemplatedrivenComponent
+      },
+      {
+        path:'modelform',
+        component:ModeldrivenComponent
       }
     ])
   ],

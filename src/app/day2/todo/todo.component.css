@@ -1,0 +1,39 @@
+.task{
+
+    height:50px;
+    position: relative;
+    border: 1px solid darkgrey;
+    width:90%;
+    padding:5px;
+    text-align: center;
+    margin-left:auto;
+
+}
+
+
+.task button{
+    width:80px;
+    color: blue;
+    height:40px;
+}
+
+ul{
+    list-style: none;
+    font-size: 22px;
+    color:darkgreen;
+    
+}
+
+li{
+    border-bottom: 1px solid grey;
+    background-color: darkgrey;
+    padding: 5px;
+    margin:5px;
+    height: 22px;
+}
+
+.done{
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+}

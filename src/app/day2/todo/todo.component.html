@@ -2,15 +2,17 @@
   todo manager!
 </h3>
 
-Task: <input [(ngModel)]="newTask" type="text" >
-<button (click)="addTask()">Add Task</button>
+<div class="task">
 
+  Task:
+  <input [(ngModel)]="newTask" type="text" class="addtask">
+  <button (click)="addTask()">Add Task</button>
+</div>
 
 
 <ul>
-  <li *ngFor="let t of tasks; let currentcounter=index">{{currentcounter}}{{t}} 
-    <button (click)="deleteTask(currentcounter)">Done</button>
+  <li *ngFor="let t of tasks; let currentcounter=index">{{currentcounter}}{{t}}
+    <button (click)="deleteTask(currentcounter)" class="done">Done</button>
   </li>
 </ul>
-<hr>
-Raw Data of tasks array:{{tasks}}
+<hr> Raw Data of tasks array:{{tasks}}
