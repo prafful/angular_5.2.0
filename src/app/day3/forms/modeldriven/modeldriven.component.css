@@ -1,0 +1,24 @@
+.userform{
+    display: block;
+    background: gainsboro;
+    margin-top: 20px;
+    padding: 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+}
+
+input, select{
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+input[type='submit']:hover{
+    background-color: darkgrey
+}
+
+input[type='submit']:disabled{
+    background-color: cornsilk
+}
